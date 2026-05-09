@@ -1,2 +1,20 @@
 @import "tailwindcss";
 
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-33.33%);   /* Changed for 3x duplication */
+    }
+}
+
+.animate-marquee {
+    display: flex;
+    animation: marquee 20s linear infinite;
+    width: max-content;
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
