@@ -74,9 +74,7 @@ const Banner = () => {
                             </p>
 
                             <div className='flex flex-col sm:flex-row gap-6 md:gap-8 items-start sm:items-center'>
-                                <button className='bg-black hover:bg-gray-800 transition px-8 py-3.5 text-white rounded-lg font-medium text-sm'>
-                                    Learn More
-                                </button>
+                                <button class="group hover:text-black relative h-12 overflow-hidden overflow-x-hidden rounded-md bg-neutral-950 px-8 py-2 text-neutral-50"><span class="relative z-10">Learn More</span><span class="absolute inset-0 overflow-hidden rounded-md"><span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-[#f8c400] transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
 
                                 <div className="flex items-center gap-4">
                                     <Image 
@@ -113,3 +111,4 @@ const Banner = () => {
 };
 
 export default Banner;
+
