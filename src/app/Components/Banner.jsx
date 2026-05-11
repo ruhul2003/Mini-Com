@@ -22,7 +22,7 @@ const categories = [
 
 const Banner = () => {
     return (
-        <div className="bg-white w-10/12 mx-auto mt-16 flex overflow-hidden">
+        <div className="bg-white w-10/12 mx-auto mt-16 flex min-h-[90vh] overflow-hidden">
             <div className="w-full mx-auto flex flex-col ">
                 
                 {/* Marquee Section */}
@@ -82,7 +82,7 @@ const Banner = () => {
                                         alt="Why Choose Us" 
                                         width={140} 
                                         height={50} 
-                                        className="object-contain"
+                                        className="object-contain "
                                     />
                                     <p className='text-sm text-gray-600 leading-tight'>
                                         Trusted by thousands of <br /> satisfied customers
@@ -98,7 +98,7 @@ const Banner = () => {
                                 alt="Hero Image" 
                                 width={950} 
                                 height={650}
-                                className="w-full max-w-[620px] lg:max-w-[680px] xl:max-w-[750px] rounded-3xl object-cover"
+                                className="w-full pr-10 hover:scale-105 transition-transform duration-300 max-w-[620px] lg:max-w-[680px] xl:max-w-[750px] rounded-3xl object-cover"
                                 priority
                             />
                         </div>
